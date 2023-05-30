@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	// Fonts
+	--title-font: 'Playfair Display', serif;
+	--main-font: 'Nunito', sans-serif;
+
+	// Colors
+	--primary: #7286D3;
+	--secondary: #8EA7E9;
+	--grey: #E5E0FF;
+	--white: #FFF2F2;
+	--pure-white: white;
+}
+
+body{
+	// Background tiles
+	background-color: var(--primary);
+	background-image:  linear-gradient(var(--secondary) 1px, transparent 1px), linear-gradient(to right, var(--secondary) 1px, var(--primary) 1px);
+	background-size: 30px 30px;
+
+	font-family: var(--main-font);
+}
+
+.nav{
+	background-color: var(--primary);
+	height: 10vh;
+	margin: 10px 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 5px solid var(--secondary) ;
+	border-radius: 100vw;
+	color: var(--pure-white);
+	font-size: 20px;
+}
