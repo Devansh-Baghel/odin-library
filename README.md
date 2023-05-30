@@ -4,6 +4,7 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 
 ## Todo
 - [x] Add basic html
+- [x] Add favicon
 - [x] Find a color palette
 - [x] Add nav styling
 - [x] Find a background
