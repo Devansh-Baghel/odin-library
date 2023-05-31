@@ -12,8 +12,7 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Add example cards
 - [x] Add card styling
 - [x] Add js to add new cards (just as an example for now)
-- [ ] Add a modal/form to add books
-- [ ] Add modal/form styling
+- [x] Add a modal/form to add books
 - [ ] Add js to make add book button show the modal
-- [ ] Add vitest for TDD
+- [ ] Add modal/form styling
 - [ ] Make it work ..?
