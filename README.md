@@ -15,4 +15,5 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Add a modal/form to add books
 - [x] Add js to make add book button show the modal
 - [ ] Add modal/form styling
-- [ ] Make it work ..?
+- [x] Make addBookToLibararyWork
+- [ ] Display each book in the library in a card

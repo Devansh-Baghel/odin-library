@@ -27,7 +27,15 @@ function Book (title, author){
 }
 
 function addBookToLibrary() {
-	
+	const title = titleInput.value;
+	const author = authorInput.value;
+
+	if (title === "" || author === ""){
+		return
+	}
+
+	library.push(new Book(title, author));
+	console.log(library);
 }
 
 
