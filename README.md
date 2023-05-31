@@ -8,9 +8,11 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Find a color palette
 - [x] Add nav styling
 - [x] Find a background
-- [ ] Add button styling
+- [x] Add button styling
 - [ ] Add example cards
 - [ ] Add card styling
 - [ ] Add a modal/form to add books
 - [ ] Add modal/form styling
+- [ ] Add js to make add book button show the modal
+- [ ] Add vitest for TDD
 - [ ] Make it work ..?

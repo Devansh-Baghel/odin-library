@@ -3,6 +3,8 @@
 *, *::before, *::after{
 	margin: 0;
 	padding: 0;
+
+	box-sizing: border-box;
 }
 
 :root{
@@ -29,7 +31,7 @@ body{
 
 .nav{
 	background-color: var(--primary);
-	height: 10vh;
+	height: 13vh;
 	margin: 10px 20px;
 
 	display: flex;
@@ -39,5 +41,28 @@ body{
 	border: 5px solid var(--secondary) ;
 	border-radius: 100vw;
 	color: var(--pure-white);
+	font-size: 22px;
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.add-book{
+	border: none;
+	border-radius: 100vw;
+	height: 60px;
+	width: 200px;
 	font-size: 20px;
+	background-color: var(--secondary);
+	color: white;
+	font-weight: 600;
+}
+
+.add-book:hover{
+	cursor: pointer;
+	background-color: var(--primary);
+	border: 5px solid var(--secondary);
 }
