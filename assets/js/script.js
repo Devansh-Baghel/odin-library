@@ -7,17 +7,10 @@ const titleInput = document.querySelector("#title-input");
 const authorInput = document.querySelector("#author-input");
 const submitButton = document.querySelector(".submit-button");
 
-// function addCard(){
-// 	const newCard = document.createElement("div");
-// 	cardsWrapper.appendChild(newCard);
-// 	newCard.classList.add("card");
-// }
 
-// addBookButton.addEventListener("click", addCard);
 addBookButton.addEventListener("click", () => {
 	modal.showModal();
 })
-
 
 let library = [];
 
@@ -25,6 +18,21 @@ function Book (title, author){
 	this.title = title;
 	this.author = author;
 }
+
+function addCardToDisplay(title, author){
+	const newCard = document.createElement("div");
+	cardsWrapper.appendChild(newCard);
+	newCard.classList.add("card");
+
+	const titleDisplay = document.createElement("h2");
+	const authorDisplay = document.createElement("p");
+	newCard.appendChild(titleDisplay);
+	newCard.appendChild(authorDisplay);
+
+	titleDisplay.innerText = title;
+	authorDisplay.innerText = author;
+}
+
 
 function addBookToLibrary() {
 	const title = titleInput.value;
@@ -35,6 +43,7 @@ function addBookToLibrary() {
 	}
 
 	library.push(new Book(title, author));
+	addCardToDisplay(title, author);
 	console.log(library);
 }
 

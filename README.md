@@ -15,5 +15,11 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Add a modal/form to add books
 - [x] Add js to make add book button show the modal
 - [ ] Add modal/form styling
-- [x] Make addBookToLibararyWork
-- [ ] Display each book in the library in a card
+- [x] Make addBookToLibarary work
+- [x] Display each book in the library in a card
+- [ ] Make sure books don't go away when user refreshes the page
+- [ ] Add a button to remove books
+- [ ] Add number of pages in modal/form
+- [ ] Add a read toggle in modal/form
+- [ ] Change the card css based on read toggle
+- [ ] Add a button on each book’s display to change its read status
