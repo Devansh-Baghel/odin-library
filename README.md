@@ -9,8 +9,9 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Add nav styling
 - [x] Find a background
 - [x] Add button styling
-- [ ] Add example cards
-- [ ] Add card styling
+- [x] Add example cards
+- [x] Add card styling
+- [x] Add js to add new cards (just as an example for now)
 - [ ] Add a modal/form to add books
 - [ ] Add modal/form styling
 - [ ] Add js to make add book button show the modal

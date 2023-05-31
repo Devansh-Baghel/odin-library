@@ -48,6 +48,7 @@ body{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	gap: 20px;
 }
 
 .add-book{
@@ -65,4 +66,26 @@ body{
 	cursor: pointer;
 	background-color: var(--primary);
 	border: 5px solid var(--secondary);
+}
+
+.cards{
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.card{
+	background-color: var(--primary);
+	border: 5px solid var(--secondary);
+	border-radius: 50px;
+	color: white;
+	height: 200px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
