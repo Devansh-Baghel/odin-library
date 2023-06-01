@@ -42,13 +42,23 @@ function addCardToDisplay(title, author, pages, haveRead){
 	authorDisplay.innerText = author;
 	pagesDisplay.innerText = pages;
 
-	(haveRead) ? haveReadDisplay.innerText = "Read" : haveReadDisplay.innerText = "Not read";
+	if (haveRead){
+		haveReadDisplay.innerText = "Read";
+		haveReadDisplay.classList.add("read");
+	} else {
+		haveReadDisplay.innerText = "Not read";
+		haveReadDisplay.classList.add("not-read");
+	}
 
 	haveReadDisplay.addEventListener("click", () => {
 		if(haveReadDisplay.innerText === "Read"){
 			haveReadDisplay.innerText = "Not read";
+			haveReadDisplay.classList.remove("read");
+			haveReadDisplay.classList.add("not-read");
 		} else{
 			haveReadDisplay.innerText = "Read";
+			haveReadDisplay.classList.remove("not-read");
+			haveReadDisplay.classList.add("read");
 		}
 	})
 }
