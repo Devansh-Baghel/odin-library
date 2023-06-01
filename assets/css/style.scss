@@ -19,7 +19,7 @@
 	--white: #FFF2F2;
 	--pure-white: white;
 	--green: #a6ff6b;
-	--red: #ff7676;
+	--red: #ff5252;
 }
 
 body{
@@ -125,4 +125,12 @@ body{
 		font-weight: 500;
 		cursor: pointer;
 	}
+}
+
+.remove{
+	margin-top: 10px;
+}
+
+.remove:hover{
+	background-color: var(--red);
 }

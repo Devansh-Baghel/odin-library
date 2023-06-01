@@ -32,12 +32,16 @@ function addCardToDisplay(title, author, pages, haveRead){
 	const authorDisplay = document.createElement("p");
 	const pagesDisplay = document.createElement("p");
 	const haveReadDisplay = document.createElement("button");
+	const removeButton = document.createElement("button")
+	removeButton.classList.add("remove");
+
 	newCard.appendChild(titleDisplay);
 	newCard.appendChild(authorDisplay);
 	newCard.appendChild(pagesDisplay);
 	newCard.appendChild(haveReadDisplay);
-	haveReadDisplay.classList.add("read-button");
-
+	newCard.appendChild(removeButton);
+	
+	removeButton.innerText = "Remove";
 	titleDisplay.innerText = title;
 	authorDisplay.innerText = author;
 	pagesDisplay.innerText = pages;
@@ -60,6 +64,10 @@ function addCardToDisplay(title, author, pages, haveRead){
 			haveReadDisplay.classList.remove("not-read");
 			haveReadDisplay.classList.add("read");
 		}
+	})
+
+	removeButton.addEventListener("click", () => {
+		newCard.remove();
 	})
 }
 
