@@ -41,11 +41,7 @@ function addCardToDisplay(title, author, pages, haveRead){
 	authorDisplay.innerText = author;
 	pagesDisplay.innerText = pages;
 
-	if (haveRead){
-		haveReadDisplay.innerText = "Read";
-	} else{
-		haveReadDisplay.innerText = "Not read";
-	}
+	(haveRead) ? haveReadDisplay.innerText = "Read" : haveReadDisplay.innerText = "Not read";
 }
 
 
@@ -59,11 +55,7 @@ function addBookToLibrary() {
 		return
 	}
 
-	if (readInput.checked) {
-		haveRead = true;
-	} else{
-		haveRead = false;
-	}
+	(readInput.checked) ? haveRead = true : haveRead = false;
 
 	library.push(new Book(title, author, pages, haveRead));
 	addCardToDisplay(title, author, pages, haveRead);
