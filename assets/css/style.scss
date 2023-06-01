@@ -76,6 +76,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	min-height: 63vh;
 }
 
 
@@ -86,7 +87,8 @@ body{
 	color: white;
 	// height: 240px;
 	padding: 40px;
-	width: 300px;
+	min-width: 300px;
+	max-width: 450px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -133,4 +135,20 @@ body{
 
 .remove:hover{
 	background-color: var(--red);
+}
+
+.footer{
+	*{
+		color: white;
+		text-decoration: none;
+	}
+
+	background-color: var(--primary);
+	width: 95vw;
+	border: 5px solid var(--secondary);
+	border-radius: 100vw;
+	display: flex;
+	height: 30px;
+	align-items: center;
+	justify-content: space-evenly;
 }

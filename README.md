@@ -23,6 +23,6 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Change the card css based on read toggle
 - [x] Add a button to remove books
 - [x] Add a button on each book’s display to change its read status
-- [ ] Sync haveRead inside object with it's UI
 - [x] Remove example cards/books from html
-- [ ] Make sure books don't go away when user refreshes the page
+- [x] Add a footer
+- [ ] Sync haveRead inside object with it's UI
