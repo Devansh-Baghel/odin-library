@@ -14,7 +14,7 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Add js to add new cards (just as an example for now)
 - [x] Add a modal/form to add books
 - [x] Add js to make add book button show the modal
-- [ ] Add modal/form styling
+- [x] Add modal/form styling
 - [x] Make addBookToLibarary work
 - [x] Display each book in the library in a card
 - [x] Add number of pages in modal/form

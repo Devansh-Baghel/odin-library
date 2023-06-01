@@ -178,4 +178,100 @@ body {
   color: white;
   text-decoration: none;
 }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px 20px 20px;
+  color: white;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form > input {
+  width: 200px;
+  height: 40px;
+  padding-left: 15px;
+  background-color: var(--secondary);
+  color: var(--pure-white);
+  border: none;
+  border-radius: 100vw;
+  font-size: 16px;
+}
+
+form > input:focus {
+  outline: 3px solid var(--white);
+}
+
+form > input::-webkit-input-placeholder {
+  color: var(--grey);
+}
+
+form > input:-ms-input-placeholder {
+  color: var(--grey);
+}
+
+form > input::-ms-input-placeholder {
+  color: var(--grey);
+}
+
+form > input::placeholder {
+  color: var(--grey);
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+form input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+}
+
+form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form button {
+  border: 5px solid var(--secondary);
+  border-radius: 100vw;
+  font-size: 20px;
+  height: 50px;
+  background-color: var(--secondary);
+  color: var(--pure-white);
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  border-color: var(--secondary);
+}
+
+dialog {
+  background-color: var(--primary);
+  border: 5px solid var(--secondary);
+  border-radius: 50px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -153,3 +153,80 @@ body{
 	justify-content: space-evenly;
 	margin-top: 20px;
 }
+
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 40px 20px 20px 20px;
+	color: white;
+
+	>input{
+		width: 200px;
+		height: 40px;
+		padding-left: 15px;
+		background-color: var(--secondary);
+		color: var(--pure-white);
+		border: none;
+		border-radius: 100vw;
+		font-size: 16px;
+	}
+
+	>input:focus{
+		// outline: 1px --primary;
+		// border: none;
+		outline: 3px solid var(--white);
+	}
+
+	>input::placeholder{
+		color: var(--grey);
+	}
+
+	// Removing the arrows from pages input
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+		-moz-appearance: textfield;
+	}
+
+	span{
+		font-size: 20px;
+		margin-right: 10px;
+	}
+	input[type=checkbox]{
+		width: 17px;
+		height: 17px;
+	}
+
+	>div{
+		display: flex;
+		align-items: center;
+	}
+
+	button{
+		border: 5px solid var(--secondary);
+		border-radius: 100vw;
+		font-size: 20px;
+		height: 50px;
+		background-color: var(--secondary);
+		color: var(--pure-white);
+	}
+
+	button:hover{
+		cursor: pointer;
+		background-color: var(--primary);
+		border-color: var(--secondary);
+	}
+}
+
+dialog{
+	background-color: var(--primary);
+	border: 5px solid var(--secondary);
+	border-radius: 50px;
+}
