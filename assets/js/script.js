@@ -36,12 +36,21 @@ function addCardToDisplay(title, author, pages, haveRead){
 	newCard.appendChild(authorDisplay);
 	newCard.appendChild(pagesDisplay);
 	newCard.appendChild(haveReadDisplay);
+	haveReadDisplay.classList.add("read-button");
 
 	titleDisplay.innerText = title;
 	authorDisplay.innerText = author;
 	pagesDisplay.innerText = pages;
 
 	(haveRead) ? haveReadDisplay.innerText = "Read" : haveReadDisplay.innerText = "Not read";
+
+	haveReadDisplay.addEventListener("click", () => {
+		if(haveReadDisplay.innerText === "Read"){
+			haveReadDisplay.innerText = "Not read";
+		} else{
+			haveReadDisplay.innerText = "Read";
+		}
+	})
 }
 
 
