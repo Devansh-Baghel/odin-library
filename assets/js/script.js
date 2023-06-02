@@ -44,7 +44,7 @@ function addBookToLibrary() {
 // - Display via looping over the library arr
 
 function addCardToDisplay(){
-	const lastIndex = library.length - 1;
+	let lastIndex = library.length - 1;
 
 	const newCard = document.createElement("div");
 	cardsWrapper.appendChild(newCard);
@@ -94,7 +94,7 @@ function addCardToDisplay(){
 	// Logic for removing the book from both UI and library array
 	removeButton.addEventListener("click", () => {
 		newCard.remove();
-		library.splice(lastIndex, lastIndex+1);
+		library.splice(lastIndex, 1);
 	})
 }
 
