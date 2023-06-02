@@ -25,4 +25,4 @@ This is my solution of [TOP's Library Project](https://www.theodinproject.com/le
 - [x] Add a button on each book’s display to change its read status
 - [x] Remove example cards/books from html
 - [x] Add a footer
-- [ ] Sync haveRead inside object with it's UI
+- [x] Sync library array and UI
