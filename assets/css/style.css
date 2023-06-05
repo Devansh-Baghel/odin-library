@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-  --title-font: 'Playfair Display', serif;
-  --main-font: 'Nunito', sans-serif;
+  --title-font: "Playfair Display", serif;
+  --main-font: "Nunito", sans-serif;
   --primary: #7286D3;
   --secondary: #8EA7E9;
   --grey: #E5E0FF;
@@ -27,15 +26,9 @@ body {
   background-color: var(--primary);
   height: 13vh;
   margin: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 5px solid var(--secondary);
   border-radius: 100vw;
   color: var(--pure-white);
@@ -43,16 +36,9 @@ body {
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -74,18 +60,11 @@ body {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 63vh;
 }
 
@@ -97,25 +76,14 @@ body {
   padding: 40px;
   min-width: 300px;
   max-width: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .card p:nth-child(2) {
   margin-bottom: -10px;
 }
-
 .card button {
   border: 5px solid var(--secondary);
   border-radius: 100vw;
@@ -123,25 +91,20 @@ body {
   height: 60px;
   font-size: 18px;
 }
-
 .card .read {
   background-color: var(--green);
 }
-
 .card .read:hover {
   background-color: var(--secondary);
   border: 5px solid var(--green);
 }
-
 .card .not-read {
   background-color: var(--white);
 }
-
 .card .not-read:hover {
   background-color: var(--secondary);
   border: 5px solid var(--white);
 }
-
 .card button:hover {
   color: var(--pure-white);
   font-weight: 500;
@@ -161,39 +124,26 @@ body {
   width: 95vw;
   border: 5px solid var(--secondary);
   border-radius: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
-
 .footer * {
   color: white;
   text-decoration: none;
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
   padding: 40px 20px 20px 20px;
   color: white;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
-
 form > input {
   width: 200px;
   height: 40px;
@@ -204,56 +154,38 @@ form > input {
   border-radius: 100vw;
   font-size: 16px;
 }
-
 form > input:focus {
   outline: 3px solid var(--white);
 }
-
-form > input::-webkit-input-placeholder {
+form > input::-moz-placeholder {
   color: var(--grey);
 }
-
 form > input:-ms-input-placeholder {
   color: var(--grey);
 }
-
-form > input::-ms-input-placeholder {
-  color: var(--grey);
-}
-
 form > input::placeholder {
   color: var(--grey);
 }
-
 form input::-webkit-outer-spin-button,
 form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 form input[type=number] {
   -moz-appearance: textfield;
 }
-
 form span {
   font-size: 20px;
   margin-right: 10px;
 }
-
 form input[type=checkbox] {
   width: 17px;
   height: 17px;
 }
-
 form > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 form button {
   border: 5px solid var(--secondary);
   border-radius: 100vw;
@@ -262,7 +194,6 @@ form button {
   background-color: var(--secondary);
   color: var(--pure-white);
 }
-
 form button:hover {
   cursor: pointer;
   background-color: var(--primary);
@@ -274,4 +205,10 @@ dialog {
   border: 5px solid var(--secondary);
   border-radius: 50px;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    height: 60px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
