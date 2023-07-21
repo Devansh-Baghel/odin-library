@@ -99,3 +99,6 @@ function addCardToDisplay() {
 }
 
 submitButton.addEventListener("click", addBookToLibrary);
+document.querySelector("#cancel-button").addEventListener("click", () => {
+  modal.close();
+})
